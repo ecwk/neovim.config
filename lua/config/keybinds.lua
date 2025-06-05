@@ -7,13 +7,13 @@ local map = vim.keymap.set
 --map("i", "<C-k>", "<Up>", { desc = "Move Up", nowait = true })
 
 -- Windows
-map("n", "<leader>\"", "<C-w>s<C-w>j", { desc = "Split window horizontally" })
-map("n", "<leader>%", "<C-w>v<C-w>l", { desc = "Split window vertically" })
-map("n", "<leader>q", "<C-w>q", { desc = "Quit window" })
-map("n", "<leader>h", "<C-w>h", { desc = "Focus left window" })
-map("n", "<leader>l", "<C-w>l", { desc = "Focus right window" })
-map("n", "<leader>j", "<C-w>j", { desc = "Focus bottom window" })
-map("n", "<leader>k", "<C-w>k", { desc = "Focus top window" })
+--map("n", "<leader>\"", "<C-w>s<C-w>j", { desc = "Split window horizontally" })
+--map("n", "<leader>%", "<C-w>v<C-w>l", { desc = "Split window vertically" })
+--map("n", "<leader>q", "<C-w>q", { desc = "Quit window" })
+--map("n", "<leader>h", "<C-w>h", { desc = "Focus left window" })
+--map("n", "<leader>l", "<C-w>l", { desc = "Focus right window" })
+--map("n", "<leader>j", "<C-w>j", { desc = "Focus bottom window" })
+--map("n", "<leader>k", "<C-w>k", { desc = "Focus top window" })
 
 -- Easier movement alternative keybinds
 map("i", "<C-a>", "<ESC>^i", { desc = "Move beginning of line" })
