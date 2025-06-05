@@ -5,5 +5,6 @@ return {
     require("mini.pairs").setup()
     require("mini.pick").setup()
     require("mini.surround").setup()
+    require("mini.diff").setup()
   end
 }
