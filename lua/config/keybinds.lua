@@ -23,8 +23,9 @@ map("n", "<C-Up>", "<C-y>", { noremap = true })
 map("n", "<C-Down>", "<C-e>", { noremap = true })
 
 -- Diagnostics
-map("n", "<leader>d", vim.diagnostic.open_float, { desc = "Open diagnostics" })
---map("n", "<leader>do", vim.diagnostic.setj)
+map("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Open diagnostics" })
+map("n", "<leader>dc", vim.diagnostic.setqflist, { desc = "List diagnostics" })
+map("n", "<leader>de", function() vim.diagnostic.setqflist({ severity = "ERROR" }) end, { desc = "List diagnostic errors" })
 
 -- Toggle options
 map("n", "<leader>n", "<cmd>set nu!<CR>", { desc = "Toggle line number" })
@@ -35,3 +36,14 @@ map("n", "<Esc>", ":noh<CR><Esc>", { desc = "Clear highlight", silent = true })
 map("n", "<C-s>", ":update<CR>", { desc = "Save buffer", silent = true })
 map("i", "<C-s>", "<C-O>:update<CR>", { desc = "Save buffer", silent = true })
 map("n", "<C-K>", "<CMD>lua vim.lsp.buf.signature_help()<CR>", {desc = "Open signature help" })
+
+-- Telescope
+map("n", "<leader>ff", ":Pick files<CR>")
+map("n", "<leader>fg", ":Pick grep_live<CR>")
+map("n", "<leader>fh", ":Pick help<CR>")
+
+-- Tabs
+map("n", "<leader>th", ":tabprevious<CR>", { desc = "Previous tab" })
+map("n", "<leader>tl", ":tabnext<CR>", { desc = "Next tab" })
+map("n", "<leader>tH", ":-tabmove<CR>", { desc = "Swap with previous tab" })
+map("n", "<leader>tL", ":+tabmove<CR>", { desc = "Swap with next tab" })
