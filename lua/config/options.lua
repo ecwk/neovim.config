@@ -19,3 +19,4 @@ vim.cmd("highlight LineNr guibg=none")
 vim.o.ignorecase = true
 vim.o.smartcase = true
 
+vim.o.showtabline = 2
