@@ -20,3 +20,5 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.o.showtabline = 2
+
+vim.o.splitright = true
