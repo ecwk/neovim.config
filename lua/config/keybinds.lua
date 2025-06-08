@@ -24,7 +24,7 @@ map("n", "<C-Down>", "<C-e>", { noremap = true })
 
 -- Diagnostics
 map("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Open diagnostics" })
-map("n", "<leader>dc", vim.diagnostic.setqflist, { desc = "List diagnostics" })
+map("n", "<leader>dl", vim.diagnostic.setqflist, { desc = "List diagnostics" })
 map("n", "<leader>de", function() vim.diagnostic.setqflist({ severity = "ERROR" }) end, { desc = "List diagnostic errors" })
 
 -- Toggle options
