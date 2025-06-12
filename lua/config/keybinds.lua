@@ -47,3 +47,6 @@ map("n", "<leader>th", ":tabprevious<CR>", { desc = "Previous tab" })
 map("n", "<leader>tl", ":tabnext<CR>", { desc = "Next tab" })
 map("n", "<leader>tH", ":-tabmove<CR>", { desc = "Swap with previous tab" })
 map("n", "<leader>tL", ":+tabmove<CR>", { desc = "Swap with next tab" })
+
+-- Explorer
+map("n", "<leader>e", ":Oil<CR>", { desc = "Open file explorer" })
