@@ -50,3 +50,4 @@ map("n", "<leader>tL", ":+tabmove<CR>", { desc = "Swap with next tab" })
 
 -- Explorer
 map("n", "<leader>e", ":Oil<CR>", { desc = "Open file explorer" })
+map("n", "<leader>o", ":Oil<CR>", { desc = "Open file explorer" })
