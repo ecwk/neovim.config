@@ -6,15 +6,12 @@ return {
 
         conform.setup({
             formatters_by_ft = {
-                json = { "prettier" }
+                ["_"] = { "prettier" },
             }
         })
 
         vim.keymap.set({ "n", "v" }, "<leader>p", function()
             conform.format({
-                formatters_by_ft = {
-                    rust = { "rustfmt" }
-                },
                 lsp_format = "fallback",
                 async = true,
             })
