@@ -19,12 +19,20 @@ return {
           "lua_ls",
         },
       })
+    -- vim.lsp.config("tailwindcss", {
+    --     settings = {
+    --         tailwindCSS = {
+    --             -- classAttributes = { "clsx" }
+    --         }
+    --     }
+    -- })
     end
+
   },
   {
     "ray-x/lsp_signature.nvim",
     event = "InsertEnter",
-    enabled = false,
+    enabled = true,
     opts = {
       move_cursor_key = "<M-k>",
     }
