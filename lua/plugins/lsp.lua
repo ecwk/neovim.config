@@ -34,7 +34,7 @@ return {
     event = "InsertEnter",
     enabled = true,
     opts = {
-      move_cursor_key = "<M-k>",
+      toggle_key = "<M-k>",
     }
   }
 }
