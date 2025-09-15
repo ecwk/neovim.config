@@ -14,7 +14,7 @@ return {
 			conform.setup({
 				formatters_by_ft = {
 					lua = { "stylua" },
-					["_"] = { "biome", "prettier" },
+					["_"] = { "biome", "prettier", stop_after_first = true },
 				},
 				formatters = {
 					["tailwind-class-sorter"] = {
