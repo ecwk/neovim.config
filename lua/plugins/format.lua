@@ -26,14 +26,6 @@ return {
 			})
 
 			vim.keymap.set({ "n", "v" }, "<leader>p", function()
-				if vim.list_contains({ "typescriptreact", "javascriptreact" }, vim.o.filetype) then
-					conform.format({
-						formatters = { "tailwind-class-sorter" },
-						lsp_format = "never",
-						async = false,
-					})
-				end
-
 				conform.format({
 					lsp_format = "fallback",
 					async = true,
