@@ -15,6 +15,9 @@ return {
 					dismiss = "<M-q>",
 				},
 			},
+			filetypes = {
+				["*"] = true,
+			},
 		})
 	end,
 }
