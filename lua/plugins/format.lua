@@ -31,6 +31,14 @@ return {
 					async = true,
 				})
 			end, { desc = "Format file" })
+
+			vim.keymap.set("n", "<leader>P", function()
+				conform.format({
+					formatters = { "tailwind-class-sorter" },
+					lsp_format = "never",
+					async = false,
+				})
+			end, { desc = "Sort Tailwind classes" })
 		end,
 	},
 }

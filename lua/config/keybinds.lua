@@ -35,7 +35,7 @@ map("n", "<Esc>", ":noh<CR><Esc>", { desc = "Clear highlight", silent = true })
 
 map("n", "<C-s>", ":update<CR>", { desc = "Save buffer", silent = true })
 map("i", "<C-s>", "<C-O>:update<CR>", { desc = "Save buffer", silent = true })
-map("n", "<C-K>", "<CMD>lua vim.lsp.buf.signature_help()<CR>", {desc = "Open signature help" })
+map("n", "<leader>s", "<CMD>lua vim.lsp.buf.signature_help()<CR>", {desc = "Open signature help" })
 
 -- Telescope
 map("n", "<leader>ff", ":Pick files<CR>")

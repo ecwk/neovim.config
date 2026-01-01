@@ -33,7 +33,7 @@ return {
 		event = "InsertEnter",
 		enabled = true,
 		opts = {
-			toggle_key = "<M-k>",
+			-- toggle_key = "<M-k>",
 			floating_window = false,
 		},
 	},

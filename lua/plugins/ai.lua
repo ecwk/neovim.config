@@ -7,7 +7,7 @@ return {
 			suggestion = {
 				auto_trigger = true,
 				keymap = {
-					accept = "<M-l>",
+					accept = "<tab>",
 					accept_word = false,
 					accept_line = false,
 					next = "<M-n>",
