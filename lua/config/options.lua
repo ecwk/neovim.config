@@ -21,10 +21,9 @@ vim.o.smartcase = true
 
 vim.o.showtabline = 2
 
-vim.o.splitright = true
-
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevel = 99
 
 -- Override mini.basics
+-- vim.o.completeopt = "menu,popup"
 vim.o.wrap = true

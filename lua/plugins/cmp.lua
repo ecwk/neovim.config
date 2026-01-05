@@ -26,23 +26,14 @@ return {
   config = function()
     local cmp = require("cmp")
     local lspkind = require("lspkind")
-
+    
     cmp.setup({
       mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
         ["<C-c>"] = cmp.mapping.abort(),
-        ["<C-n>"] = cmp.mapping.select_next_item(),
-        ["<C-p>"] = cmp.mapping.select_prev_item(),
         ["<C-u>"] = cmp.mapping.scroll_docs(-4),
         ["<C-d>"] = cmp.mapping.scroll_docs(4),
-        --["<C-j>"] = function ()
-        --  if cmp.visible_docs() then
-        --    cmp.close_docs()
-        --  else
-        --    cmp.open_docs()
-        --  end
-        --end
       }),
       sources = cmp.config.sources({
         { name = "nvim_lsp" },
