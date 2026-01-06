@@ -17,6 +17,7 @@ return {
 					"html",
 					"cssls",
 					"lua_ls",
+					"copilot",
 				},
 			})
 			-- vim.lsp.config("tailwindcss", {
